@@ -1,6 +1,13 @@
 #!/bin/bash
 echo -e "\nChecking that minimal requirements are ok"
-echo ""
+logfile=$(date +%Y-%m-%d_%H.%M.%S_xtream_ui_install.log)
+touch "$logfile"
+exec > >(tee "$logfile")
+exec 2>&1
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
 # Ensure the OS is compatible with the launcher
 if [ -f /etc/almalinux-release ]; then
     OS="Alma Linux"
