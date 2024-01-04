@@ -5,9 +5,9 @@
 ## How do I install? ONLY 18.04
 ## update your ubuntu first, then install panel
 
-    *sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl3 libgeoip-dev python -y;
-    *rm install.py; wget https://github.com/dOC4eVER/ubuntu18.04/raw/master/install.py;
-    *sudo python install.py
+     sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl3 libgeoip-dev python -y;
+     rm install.py; wget https://github.com/dOC4eVER/ubuntu18.04/raw/master/install.py;
+     sudo python install.py
 #
 #
 
@@ -29,9 +29,9 @@
 #
 
 ### New installation the Xtream UI on Ubuntu 20.04 22.04
-    *sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl4 libgeoip-dev python3 -y;
-    *rm install.py; wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/xui/install-main-silent-3.py;
-    *sudo python3 install-main-silent-3.py
+     sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl4 libgeoip-dev python3 -y;
+     rm install.py; wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/xui/install-main-silent-3.py;
+     sudo python3 install-main-silent-3.py
 
 #
 #
