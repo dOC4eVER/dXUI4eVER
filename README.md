@@ -24,14 +24,15 @@
 
 ### New installation the Xtream UI on Ubuntu 18.04/20.04/22.04 Debian 10/11 CentOS 8 Fedora 34/35/36
 
-    wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/install.sh -O /tmp/install.sh && bash /tmp/install.sh
+   wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/install.sh -O /tmp/install.sh && bash /tmp/install.sh
 #
 #
 
 ### New installation the Xtream UI on Ubuntu 20.04 22.04
-     sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl4 libgeoip-dev python3 -y;
-     rm install.py; wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/xui/install-main-silent-3.py;
-     sudo python3 install-main-silent-3.py
+   
+   sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install software-properties-common libxslt1-dev libcurl4 libgeoip-dev python3 -y;
+   rm install.py; wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/xui/install-main-silent-3.py;
+   sudo python3 install-main-silent-3.py
 
 #
 #
@@ -39,7 +40,7 @@
 
 ### To upgrade an existing Panel only, with a backup of the /admin & /pytools directories in *.old in case you want to go back
  
-    wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/Update_dOC4eVER.sh -O /tmp/Update_dOC4eVER.sh && bash /tmp/Update_dOC4eVER.sh
+   wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/Update_dOC4eVER.sh -O /tmp/Update_dOC4eVER.sh && bash /tmp/Update_dOC4eVER.sh
 
 #
 #
@@ -74,9 +75,9 @@ sudo: /home/xtreamcodes/iptv_xtream_codes/php/bin/php: command not found
 
 full binary rebuild require
 
-    *wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/depbuild.sh -O /root/depbuild.sh
-    *bash /root/depbuild.sh wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/php7.2rebuild.sh -O /root/php7.2rebuild.sh
-    *bash /root/php7.2rebuild.sh /home/xtreamcodes/iptv_xtream_codes/start_services.sh
+    wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/depbuild.sh -O /root/depbuild.sh
+    bash /root/depbuild.sh wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/php7.2rebuild.sh -O /root/php7.2rebuild.sh
+    bash /root/php7.2rebuild.sh /home/xtreamcodes/iptv_xtream_codes/start_services.sh
 #
 #
 
@@ -84,8 +85,8 @@ full binary rebuild require
 
 ### if nginx and nginx_rtmp error minimal rebuild require
 
-    *wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/install-bin-packages.sh -O /root/install-bin-packages.sh
-    *bash /root/install-bin-packages.sh /home/xtreamcodes/iptv_xtream_codes/start_services.sh 
+    wget https://github.com/dOC4eVER/dXUI4eVER/raw/master/all_os/install-bin-packages.sh -O /root/install-bin-packages.sh
+    bash /root/install-bin-packages.sh /home/xtreamcodes/iptv_xtream_codes/start_services.sh 
 #
 #
    
