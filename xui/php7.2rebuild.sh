@@ -1,8 +1,17 @@
 #!/bin/bash
-if [ -f "/home/xtreamcodes/iptv_xtream_codes/php-7.4.33" ]; then
-    tput setaf 2 ; tput bold ;echo "update exists."; tput sgr0;    
-echo ""	
-else
+
+logfile=$(date +%Y-%m-%d_%H.%M.%S_php7.2rebuild.log)
+touch "$logfile"
+exec > >(tee "$logfile")
+exec 2>&1
+echo "php7.2rebuild.sh"	
+
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+
+
 echo  -e "\nChecking that minimal requirements are ok"
 echo ""
 # Ensure the OS is compatible with the launcher

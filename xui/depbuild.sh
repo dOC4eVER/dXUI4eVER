@@ -1,4 +1,9 @@
 #!/bin/bash
+logfile=$(date +%Y-%m-%d_%H.%M.%S_depbuild.log)
+touch "$logfile"
+exec > >(tee "$logfile")
+exec 2>&1
+echo "depbuild.sh"	
 
 echo  -e "\nChecking that minimal requirements are ok"
 echo ""
