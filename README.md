@@ -1,4 +1,4 @@
-# Xtream UI for Ubuntu 18.04 20.04 22.04 Debian 10 11 CentOS 8 Fedora 34 35 36 install  \n
+# Xtream UI for Ubuntu 18.04 20.04 22.04 Debian 10 11 CentOS 8 Fedora 34 35 36 install
 #
 #
 
