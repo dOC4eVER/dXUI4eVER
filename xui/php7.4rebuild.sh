@@ -67,7 +67,7 @@ echo ""
 fi
     tput setaf 6 ; tput bold ;echo -e "\n-- Updating repositories and packages sources"; tput sgr0;    
 echo ""
-fi
+#fi
 if  [[ "$OS" = "Ubuntu" && "$VER" = "22.04" ]] ; then
 sed -i "s|#\$nrconf{verbosity} = 2;|\$nrconf{verbosity} = 0;|" /etc/needrestart/needrestart.conf
 sed -i "s|#\$nrconf{restart} = 'i';|\$nrconf{restart} = 'a';|" /etc/needrestart/needrestart.conf
